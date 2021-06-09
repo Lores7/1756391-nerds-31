@@ -122,7 +122,7 @@ footer p{
 	border-radius: 3px;
 }
 .communication input:focus, textarea:focus{
-	border-color: black;
+	border-color: #000000;
 }
 button{
 	font-size: 16px;
