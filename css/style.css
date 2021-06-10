@@ -1,0 +1,292 @@
+:root {
+	--basic-black: #000000;
+	--basic-white: #ffffff;
+	--basic-extra-white: #EEEEEE;
+	--basic-gray: #666666;
+	--basic-lite-grey: #D7DCDE;
+	--basic-red: #FB565A;
+	--basic-extra-red: #E74246;
+	--basic-super-red: #D7373B;
+	--basic-light-green: #00CA74;
+	--basic-green: #00BC6C;
+	--basic-yellow: #EFC849;
+	--basic-light-yellow: #EAB534;
+	--basic-strange-white:#DFDFDF;
+	--basic-main-white:#D5D5D5;
+	--basic-main-grey:  #283136;
+
+
+}
+body {
+    min-width: 1440px;
+	margin: 0; /* внешний отступ*/
+	padding: 0; /* внцтреннийй отступ*/
+	font-family: 'Roboto', Arial, sans-serif; /* шрифт*/
+	font-size: 16px; /* размер шрифта*/
+	line-height: 24px; /*межстрочный интервал */
+	font-weight: 400; /* толщина шрифта*/
+	color: var(--basic-main-grey);
+	text-transform: none; /* Изменение регистра
+                             capitalize - Первый символ каждого слова в предложении будет заглавным.
+                                         Остальные символы свой вид не меняют.
+                             lowercase - Все символы текста становятся строчными (нижний регистр).
+                             uppercase - Все символы текста становятся прописными (верхний регистр).
+                             none - Не меняет регистр символов.
+                             inherit - Наследует значение родителя. */
+	background-color: var(--basic-white);
+	background-position: center;
+}
+a{
+  text-decoration: none;
+  color: var(--basic-black);
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.main-navigation{
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: var(--basic-black);
+	background-color: transparent;
+}
+.main-header,
+.job-img,
+.job-inf{
+	background-color: var(--basic-extra-white);
+}
+.job-inf h1{
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--basic-black);
+}
+.site-navigation{
+	list-style: none;
+}
+.ability h2{
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--basic-black);
+}
+.ability{
+	text-align: center;
+}
+.inf h2{
+	font-size: 45px;
+	line-height: 45px;
+}
+.results p{
+	font-size: 16px;
+	line-height: 18px;
+}
+.results h3{
+	font-size: 45px;
+	line-height: 64px;
+	font-weight: bold;
+	color: var(--basic-black);
+}
+.results h4{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	color: var(--basic-black);
+}
+.contacs h3{
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+}
+.partner{
+	color: inherit;
+}
+.partner:hover, .partner:focus{
+	color: var(--basic-black);
+}
+.contacs p{
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-gray);
+}
+.cellar h2{
+	font-size: 36px;
+	line-height: 36px;
+	color: var(--basic-black);
+}
+.cellar p{
+	font-size: 16px;
+	line-height: 22px;
+}
+.communication h2{
+	font-size: 45px;
+	line-height: 53px;
+	color:var(--basic-black);
+}
+.communication p{
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-black);
+	font-weight: bold;
+}
+.communication input{
+	width: 360px;
+	height: 50px;
+	font: inherit;
+	background-color: transparent;
+	border: 2px solid var(--basic-lite-grey);
+	border-radius: 3px;
+}
+.communication textarea{
+	font: inherit;
+	background-color: transparent;
+	border: 2px solid var(--basic-lite-grey);
+	border-radius: 3px;
+}
+.communication input:focus, textarea:focus{
+	border-color: var(--basic-black);
+}
+button{
+	font-size: 16px;
+	line-height: 18px;
+	font: inherit;
+	text-align: center;
+	vertical-align: middle;
+	color: var(--basic-white);
+	text-transform: uppercase;
+	background-color: var(--basic-red);
+	border: none;
+	border-radius: 3px;
+
+}
+button:hover,
+button:focus{
+	background: var(--basic-extra-red);
+}
+button:active{
+	background: var(--basic-super-red);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	color: var(--basic-white);
+	opacity: 0.3;
+}
+.job-btn{
+	width: 240px;
+	height: 50px;
+}
+.button-web{
+	width: 160px ;
+	height: 50px;
+}
+.button-app{
+	width: 160px;
+	height: 50px;
+	background: var(--basic-light-green);
+}
+.button-app:hover, .button-app:focus{
+	background: var(--basic-green);
+}
+.button-presentation{
+	width: 160px;
+	height: 50px;
+	background: var(--basic-yellow);
+}
+.button-presentation:hover, .button-presentation:focus{
+	background: var(--basic-light-yellow);
+}
+.write-btn{
+	width: 219px;
+	height: 50px;
+}
+.send-btn{
+	width: 259px;
+	height: 50px;
+}
+.button-close{
+	width: 21px;
+	height: 21px;
+	background: rgba(251, 86, 90, 0.3);
+}
+.social-networks{
+	list-style:none;
+}
+.social-networks-button{
+	color: inherit;
+}
+.social-networks-button:hover,
+.social-networks-button:focus{
+	background: linear-gradient(0deg, var(--basic-extra-red), var(--basic-extra-red)), var(--basic-white);
+}
+
+.price-btn{
+	width: 200px;
+	height: 50px;
+}
+.journal{
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--basic-black);
+}
+legend{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+}
+.catalog-container input{
+	font-size: 16px;
+	line-height: 20px;
+}
+.choose-btn{
+	width: 260px;
+	height: 50px;
+	font: inherit;
+	color: var(--basic-black);
+	background: var(--basic-extra-white);
+	border-radius: 3px;
+}
+.choose-btn:hover, .choose-btn:focus{
+	background: var(--basic-strange-white);
+}
+.choose-btn:active{
+	background: var(--basic-main-white);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	color: var(--basic-black);
+	opacity: 0.3;
+}
+.net, .features{
+	list-style: none;
+	line-height: 20px;
+}
+.sort-label{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+}
+.sort{
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-black);
+	list-style: none;
+}
+.directory-sites ul{
+	list-style: none;
+}
+.name-product{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+}
+.description-product{
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-gray);
+}
+.pagination-list ul{
+	list-style: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-black);
+}
+

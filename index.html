@@ -1,120 +1,138 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
-  </head>
-  <body>
-   <header>
-     <nav>
-       <a>
-        <img src="image/nerds-logo.svg" width="159" height="65" alt="Логотип Нёрдс">
-       </a>
-       <ul>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+  <header class="main-header"> <!-- понятные классы для дальнейшей работы -->
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img class="logo-img" src="image/nerds-logo.svg" width="159" height="65" alt="Логотип Нёрдс">
+      </a>
+      <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
-       </ul>
-       <a href="blank.html">
+      </ul>
+      <a class="basket" href="blank.html">
         <img src="image/cart-icon.svg" width="15" height="15" alt="Иконка Корзины">
-       <p> Корзина </p>
-        </a>
-     </nav> 
-     </header>
-     <main>
-      <img src="image/nerds-index-slide1-1.png" width="760" height="431" alt="Слайд Нёрдс">
-      <section>
-        <h1>Долго, дорого, скурпулезно. </h1>
-        <p>Математически выверенный дизайн <br>
+        <p> Корзина </p>
+      </a>
+    </nav>
+	<img class="job-img" src="image/nerds-index-slide1-1.png" width="760" height="431" alt="Слайд Нёрдс">
+    <section class="job-inf">
+      <h1>Долго, дорого,<br> скурпулезно. </h1>
+      <p>Математически выверенный дизайн <br>
         для вашего сайта или мобильного приложения</p>
-        <button type="button">Узнать больше</button>
-      </section>
-     <section>
-       <h2>ВЕБ-САЙТЫ</h2>
-       <img src="image/illustration-1-1.jpg" width="300" height="146" alt="Изображение ВЕБ-САЙТЫ">
-       <p>Мир никогда не будет прежним<br>
+      <button class="job-btn" type="button">Узнать больше</button>
+    </section>
+  </header>
+  <main class="container">
+    <div class="box-ability">
+	<section class="ability">
+      <h2>ВЕБ-САЙТЫ</h2>
+      <img src="image/illustration-1-1.jpg" width="300" height="146" alt="Изображение ВЕБ-САЙТЫ">
+      <p>Мир никогда не будет прежним<br>
         после того как увидит ваш сайт!</p>
-       <button type="button">Заказать</button>
-     </section>
-     <section>
-       <h2>ПРИЛОЖЕНИЯ</h2>
-       <img src="image/illustration-2-1.jpg" width="300" height="146" alt="Изображение ПРИЛОЖЕНИЯ">
-       <p>Покорите топ-10 приложений<br>
+      <button class="button-web" type="button">Заказать</button>
+    </section>
+    <section class="ability">
+      <h2>ПРИЛОЖЕНИЯ</h2>
+      <img src="image/illustration-2-1.jpg" width="300" height="146" alt="Изображение ПРИЛОЖЕНИЯ">
+      <p>Покорите топ-10 приложений<br>
         в AppStore и Google Play</p>
-       <button type="button">Заказать</button>
-     </section>
-     <section>
-       <h2>ПРЕЗЕНТАЦИИ</h2>
-       <img src="image/illustration-3-1.jpg" width="300" height="146" alt="Изображение ПРЕЗЕНТАЦИИ">
-       <p>Вы даже не подозреваете, <br>
+      <button class="button-app" type="button">Заказать</button>
+    </section>
+    <section class="ability">
+      <h2>ПРЕЗЕНТАЦИИ</h2>
+      <img src="image/illustration-3-1.jpg" width="300" height="146" alt="Изображение ПРЕЗЕНТАЦИИ">
+      <p>Вы даже не подозреваете, <br>
         насколько вы изумительны!</p>
-       <button type="button">Заказать</button>
-     </section>
-     <section>
-       <h2>Мы — маленькая, но гордая<br>
+      <button class="button-presentation" type="button">Заказать</button>
+    </section>
+	</div>
+    <section class="inf">
+	  <div class="aboutus">
+      <h2>Мы — маленькая, но гордая<br>
         дизайн-студия из Краснодара.</h2>
-       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-       <h3>Выполняем заказы на разработку:</h3>
-       <ul>
-         <li>Веб-сайтов любой сложности</li>
-         <li>Мобильных приложений для iOS и Android</li>
-         <li>Слайдшоу и видео для корпоративных презентаций</li>
-       </ul>  
-       <img src="image/nerds-illustration-1.png" width="360" height="208" alt="Изображение Нёрдс">
-       <h3>с 2004 года Любим точность во всем:</h3>
-       <h2>146<sup>%</sup></h2>
-       <p>Уровень<br>
+      <h3>Выполняем заказы на разработку:</h3>
+      <ul>
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+	  </div>
+	  <div class="results">
+      <img class="results-image" src="image/nerds-illustration-1.png" width="360" height="208" alt="Изображение Нёрдс">
+      <h4>с 2004 года Любим точность во всем:</h4>
+      <h3>146<sup>%</sup></h3>
+      <p>Уровень<br>
         самоотдачи</p>
-       <h2>100<sup>%</sup></h2>
-       <p>Соблюдение<br>
+      <h3>100<sup>%</sup></h3>
+      <p>Соблюдение<br>
         сроков</p>
-       <h2>50<sup>%</sup></h2>
-       <p>Минимальная<br>
+      <h3>50<sup>%</sup></h3>
+      <p>Минимальная<br>
         предоплата</p>
-     </section>
-     <section>
+	  </div>
+    </section>
+    <section class="partners">
       <h2>Сайты</h2>
-      <a href="blank.html"> <img src="image//logo_htmlacademy-1.png" width="199" height="57" alt="Изображение htmlacademy"></a>
-      <a href="blank.html"> <img src="image/logo-2-1.png" width="209" height="90" alt="Изображение Барбершоп Бородинский"></a>
+      <a href="blank.html"> <img src="image//logo_htmlacademy-1.png" width="199" height="57"
+          alt="Изображение htmlacademy"></a>
+      <a href="blank.html"> <img src="image/logo-2-1.png" width="209" height="90"
+          alt="Изображение Барбершоп Бородинский"></a>
       <a href="blank.html"> <img src="image/logo-3-1.png" width="185" height="52" alt="Изображение Pink App"></a>
       <a href="blank.html"> <img src="image/logo-4-1.png" width="173" height="84" alt="Изображение MISHKA"></a>
-     </section>
-     <section>
-      <img src="image/Group-14.jpg" width="1440" height="416" alt="Карта">
-       <h3>NЁRDS DESIGN STUDIO</h3>
-       <p>наб. Реки Карповки, <br>
-        5 лит П, Санкт-Петербург</p>
-       <p>+7 800 555-86-28</p>
-       <button type="button">НАПИШИТЕ НАМ</button>
-     </section>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="#"> <img src="image/Group-15.svg" width="81" height="81" alt="Иконка Вконтакте"></a></li>
-        <li><a href="#"> <img src="image/Group-16.svg"  width="81" height="81" alt="Иконка Facebook"></a></li>
-        <li><a  href="#"> <img src="image/Group-17.svg"  width="81" height="81" alt="Иконка Instagram"></a></li>
-      </ul>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
-    <section>
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-       <p><label for="login-name">Ваше имя:</label><br>
-       <input id="login-name" type="text" name="name" placeholder="Имя Фамилия"></p>
-
-       <p><label for="login-email">Ваш email:</label><br>
-       <input id="login-email" type="email" name="login" placeholder="email@example.com"></p>
-
-       <P><label for="login-text">Текст письма:</label><br>
-       <textarea id="login-text" name="text" rows="6" cols="50" placeholder="В свободной форме"></textarea></p>
-
-       <button type="submit">Отправить</button><br>      
-      </form>
-      <button type="button">Закрыть</button>
     </section>
-  </body>
+    <section>
+      <img class="map" src="image/Group-14.jpg" width="1440" height="416" alt="Карта">
+	  <div class="contacs">
+      	<h3>NЁRDS DESIGN STUDIO</h3>
+     	 <p>наб. Реки Карповки, <br>
+			 5 лит П, Санкт-Петербург</p>
+      	<p>+7 800 555-86-28</p>
+      	<button class="write-btn" type="button">НАПИШИТЕ НАМ</button>
+	  </div>
+    </section>
+  </main>
+  <footer class="cellar">
+    <ul class="social-networks">
+      <li class="social-networks-button"><a href="#"> <img src="image/Group-15.svg" width="81" height="81" alt="Иконка Вконтакте"></a></li>
+      <li class="social-networks-button"><a href="#"> <img src="image/Group-16.svg" width="81" height="81" alt="Иконка Facebook"></a></li>
+      <li class="social-networks-button"><a href="#"> <img src="image/Group-17.svg" width="81" height="81" alt="Иконка Instagram"></a></li>
+    </ul>
+    <div>
+	<h2 class="tagline">Давайте дружить, это выгодно!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+	</div>
+  </footer>
+  <section class="communication">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p><label for="login-name">Ваше имя:</label><br>
+        <input id="login-name" type="text" name="name" placeholder="Имя Фамилия"></p>
+
+      <p><label for="login-email">Ваш email:</label><br>
+        <input id="login-email" type="email" name="login" placeholder="email@example.com"></p>
+
+      <P><label for="login-text">Текст письма:</label><br>
+        <textarea id="login-text" name="text" rows="6" cols="50" placeholder="В свободной форме"></textarea></p>
+
+      <button class="send-btn" type="submit">Отправить</button><br>
+    </form>
+    <button class="button-close" type="button">Закрыть</button>
+  </section>
+</body>
 </html>
