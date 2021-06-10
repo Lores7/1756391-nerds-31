@@ -1,3 +1,22 @@
+:root {
+	--basic-black: #000000;
+	--basic-white: #ffffff;
+	--basic-extra-white: #EEEEEE;
+	--basic-gray: #666666;
+	--basic-lite-grey: #D7DCDE;
+	--basic-red: #FB565A;
+	--basic-extra-red: #E74246;
+	--basic-super-red: #D7373B;
+	--basic-light-green: #00CA74;
+	--basic-green: #00BC6C;
+	--basic-yellow: #EFC849;
+	--basic-light-yellow: #EAB534;
+	--basic-strange-white:#DFDFDF;
+	--basic-main-white:#D5D5D5;
+	--basic-main-grey:  #283136;
+
+
+}
 body {
     min-width: 1440px;
 	margin: 0; /* внешний отступ*/
@@ -6,7 +25,7 @@ body {
 	font-size: 16px; /* размер шрифта*/
 	line-height: 24px; /*межстрочный интервал */
 	font-weight: 400; /* толщина шрифта*/
-	color: #283136;
+	color: var(--basic-main-grey);
 	text-transform: none; /* Изменение регистра
                              capitalize - Первый символ каждого слова в предложении будет заглавным.
                                          Остальные символы свой вид не меняют.
@@ -14,12 +33,12 @@ body {
                              uppercase - Все символы текста становятся прописными (верхний регистр).
                              none - Не меняет регистр символов.
                              inherit - Наследует значение родителя. */
-	background-color: #ffffff;
+	background-color: var(--basic-white);
 	background-position: center;
 }
 a{
   text-decoration: none;
-  color: #000000;
+  color: var(--basic-black);
 }
 img{
 	max-width: 100%;
@@ -29,16 +48,18 @@ img{
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
-	color: black;
+	color: var(--basic-black);
 	background-color: transparent;
 }
-.main-header,.job-img, .job-inf{
-	background-color: #EEEEEE;
+.main-header,
+.job-img,
+.job-inf{
+	background-color: var(--basic-extra-white);
 }
 .job-inf h1{
 	font-size: 55px;
 	line-height: 55px;
-	color: #000000;
+	color: var(--basic-black);
 }
 .site-navigation{
 	list-style: none;
@@ -46,7 +67,7 @@ img{
 .ability h2{
 	font-size: 24px;
 	line-height: 30px;
-	color: #000000;
+	color: var(--basic-black);
 }
 .ability{
 	text-align: center;
@@ -63,48 +84,48 @@ img{
 	font-size: 45px;
 	line-height: 64px;
 	font-weight: bold;
-	color: #000000;
+	color: var(--basic-black);
 }
 .results h4{
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: bold;
-	color: #000000;
+	color: var(--basic-black);
 }
 .contacs h3{
 	font-size: 18px;
 	line-height: 30px;
-	color: #000000;
+	color: var(--basic-black);
 }
 .partner{
 	color: inherit;
 }
 .partner:hover, .partner:focus{
-	color: black;
+	color: var(--basic-black);
 }
 .contacs p{
 	font-size: 16px;
 	line-height: 18px;
-	color: #666666;
+	color: var(--basic-gray);
 }
-footer h2{
+.cellar h2{
 	font-size: 36px;
 	line-height: 36px;
-	color: #000000;
+	color: var(--basic-black);
 }
-footer p{
+.cellar p{
 	font-size: 16px;
 	line-height: 22px;
 }
 .communication h2{
 	font-size: 45px;
 	line-height: 53px;
-	color:black;
+	color:var(--basic-black);
 }
 .communication p{
 	font-size: 16px;
 	line-height: 18px;
-	color: black;
+	color: var(--basic-black);
 	font-weight: bold;
 }
 .communication input{
@@ -112,17 +133,17 @@ footer p{
 	height: 50px;
 	font: inherit;
 	background-color: transparent;
-	border: 2px solid #D7DCDE;
+	border: 2px solid var(--basic-lite-grey);
 	border-radius: 3px;
 }
 .communication textarea{
 	font: inherit;
 	background-color: transparent;
-	border: 2px solid #D7DCDE;
+	border: 2px solid var(--basic-lite-grey);
 	border-radius: 3px;
 }
 .communication input:focus, textarea:focus{
-	border-color: black;
+	border-color: var(--basic-black);
 }
 button{
 	font-size: 16px;
@@ -130,21 +151,21 @@ button{
 	font: inherit;
 	text-align: center;
 	vertical-align: middle;
-	color: #ffffff;
+	color: var(--basic-white);
 	text-transform: uppercase;
-	background-color: #FB565A;
+	background-color: var(--basic-red);
 	border: none;
 	border-radius: 3px;
 
 }
 button:hover,
 button:focus{
-	background: #E74246;
+	background: var(--basic-extra-red);
 }
 button:active{
-	background: #D7373B;
+	background: var(--basic-super-red);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: #FFFFFF;
+	color: var(--basic-white);
 	opacity: 0.3;
 }
 .job-btn{
@@ -158,18 +179,18 @@ button:active{
 .button-app{
 	width: 160px;
 	height: 50px;
-	background: #00CA74;
+	background: var(--basic-light-green);
 }
 .button-app:hover, .button-app:focus{
-	background: #00BC6C;
+	background: var(--basic-green);
 }
 .button-presentation{
 	width: 160px;
 	height: 50px;
-	background: #EFC849;
+	background: var(--basic-yellow);
 }
 .button-presentation:hover, .button-presentation:focus{
-	background: #EAB534;
+	background: var(--basic-light-yellow);
 }
 .write-btn{
 	width: 219px;
@@ -184,7 +205,7 @@ button:active{
 	height: 21px;
 	background: rgba(251, 86, 90, 0.3);
 }
-footer ul{
+.social-networks{
 	list-style:none;
 }
 .social-networks-button{
@@ -192,24 +213,24 @@ footer ul{
 }
 .social-networks-button:hover,
 .social-networks-button:focus{
-	background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+	background: linear-gradient(0deg, var(--basic-extra-red), var(--basic-extra-red)), var(--basic-white);
 }
 
 .price-btn{
 	width: 200px;
 	height: 50px;
 }
-.magazin-label{
+.journal{
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
-	color: black;
+	color: var(--basic-black);
 }
 legend{
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
-	color: black;
+	color: var(--basic-black);
 }
 .catalog-container input{
 	font-size: 16px;
@@ -219,17 +240,17 @@ legend{
 	width: 260px;
 	height: 50px;
 	font: inherit;
-	color: black;
-	background: #EEEEEE;
+	color: var(--basic-black);
+	background: var(--basic-extra-white);
 	border-radius: 3px;
 }
 .choose-btn:hover, .choose-btn:focus{
-	background: #DFDFDF;
+	background: var(--basic-strange-white);
 }
 .choose-btn:active{
-	background: #D5D5D5;
+	background: var(--basic-main-white);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: #000000;
+	color: var(--basic-black);
 	opacity: 0.3;
 }
 .net, .features{
@@ -244,7 +265,7 @@ legend{
 .sort{
 	font-size: 16px;
 	line-height: 18px;
-	color: black;
+	color: var(--basic-black);
 	list-style: none;
 }
 .directory-sites ul{
@@ -254,18 +275,18 @@ legend{
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
-	color: black;
+	color: var(--basic-black);
 }
 .description-product{
 	font-size: 16px;
 	line-height: 18px;
-	color: #666666;
+	color: var(--basic-gray);
 }
 .pagination-list ul{
 	list-style: none;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
-	color: black;
+	color: var(--basic-black);
 }
 
