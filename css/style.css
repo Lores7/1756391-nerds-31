@@ -17,7 +17,7 @@
 
 
 }
-body {
+.page-body {
     min-width: 1440px;
 	margin: 0; /* внешний отступ*/
 	padding: 0; /* внцтреннийй отступ*/
@@ -35,6 +35,11 @@ body {
                              inherit - Наследует значение родителя. */
 	background-color: var(--basic-white);
 	background-position: center;
+
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 a{
   text-decoration: none;
@@ -45,11 +50,41 @@ img{
 	height: auto;
 }
 .main-navigation{
+	display: grid;
+	justify-content: stretch;
+	grid-template-columns: 1fr 1fr 1fr ;
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 10px;
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
 	color: var(--basic-black);
-	background-color: transparent;
+	background-color: var(--basic-extra-white);
+	margin-top: 53px;
+}
+.center-navigation,
+.center-container,
+.catalog-container,
+.cellar
+{
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.site-navigation{
+	width: 437px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.basket-navigation{
+	justify-self: end;
+	margin: 0;
+	padding: 0;
+}
+.basket{
+	padding: 0 25px;
 }
 .main-header,
 .job-img,
@@ -61,20 +96,63 @@ img{
 	line-height: 55px;
 	color: var(--basic-black);
 }
-.site-navigation{
-	list-style: none;
+.job-inf{
+	align-self: center;
 }
-.ability h2{
+.job-img{
+	justify-self: end;
+}
+.page-header{
+	display: grid;
+	grid-template-columns: 1fr max-content;
+}
+.box-ability{
+	display: grid;
+	list-style: none;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 100px;
+	width: 1100px;
+	justify-self: center;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 76px;
+	margin-bottom: 121px;
+	column-gap: 100px;
+}
+.box-ability h2{
 	font-size: 24px;
 	line-height: 30px;
 	color: var(--basic-black);
 }
-.ability{
-	text-align: center;
+.inf{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 1170px;
+	padding: 0;
+	margin: 0;
+}
+.achievements{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 .inf h2{
 	font-size: 45px;
 	line-height: 45px;
+}
+.results{
+	justify-self: end;
+	margin: 0;
+	padding: 0;
+}
+.main-aboutus{
+	margin-top: 40px;
+	margin-bottom: 23px;
+}
+.aboutus li{
+	margin-top: 46px;
 }
 .results p{
 	font-size: 16px;
@@ -92,13 +170,32 @@ img{
 	font-weight: bold;
 	color: var(--basic-black);
 }
+.partners{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 1170px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.map{
+	max-width: 1170px;
+	justify-self: center;
+}
 .contacs h3{
 	font-size: 18px;
 	line-height: 30px;
 	color: var(--basic-black);
 }
-.partner{
+.partners{
 	color: inherit;
+	margin: 0;
+	padding: 0 ;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-self: center;
+	margin-top: 73px;
+	margin-bottom: 80px;
 }
 .partner:hover, .partner:focus{
 	color: var(--basic-black);
@@ -171,6 +268,8 @@ button:active{
 .job-btn{
 	width: 240px;
 	height: 50px;
+	margin: 38px 0px;
+	padding: 0 0;
 }
 .button-web{
 	width: 160px ;
@@ -205,8 +304,29 @@ button:active{
 	height: 21px;
 	background: rgba(251, 86, 90, 0.3);
 }
-.social-networks{
+.cellar{
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	width: 1170px;
+	margin-top: 68px;
+	margin-bottom: 68px;
+}
+/* ПРОБЛЕМА С ИКОНКАМИ СОЦСЕТЕЙ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.center-cellar{
 	list-style:none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 68;
+	padding: 0;
+	justify-self: start;
+	column-gap: 9px;
+}
+
+.tagline{
+	justify-self: center;
+	margin: 0;
+	padding: 0;
+	margin-right: 240px;
 }
 .social-networks-button{
 	color: inherit;
@@ -216,15 +336,54 @@ button:active{
 	background: linear-gradient(0deg, var(--basic-extra-red), var(--basic-extra-red)), var(--basic-white);
 }
 
+
+										/*КАТАЛОГ*/
+
+
+.catalog-container{
+	display: grid;
+	grid-template-columns: 260px 1fr;
+}
+.center-derectory-sites{
+	margin-left: 141px;
+}
+.net,
+.features{
+	margin: 0 0;
+	padding: 0 0;
+	list-style: none;
+	border: 0px;
+}
+.net-radio,
+.features-checkbox{
+	margin: 0 0;
+	padding: 0 0;
+	list-style: none;
+}
 .price-btn{
 	width: 200px;
 	height: 50px;
+}
+.net{
+	margin-top: 54px;
+
+}
+.net-radio li{
+	margin-top: 15px ;
+}
+.features{
+	margin-top: 43px;
+}
+.features-checkbox li{
+	margin-top: 17px;
 }
 .journal{
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	color: var(--basic-black);
+	text-align: center;
+	margin-bottom: 108px;
 }
 legend{
 	font-weight: bold;
@@ -243,6 +402,7 @@ legend{
 	color: var(--basic-black);
 	background: var(--basic-extra-white);
 	border-radius: 3px;
+	margin-top: 48px;
 }
 .choose-btn:hover, .choose-btn:focus{
 	background: var(--basic-strange-white);
@@ -287,6 +447,12 @@ legend{
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
-	color: var(--basic-black);
+	color: var (--basic-black);
 }
-
+.page-nambers{
+	grid-column: 1 / -1;
+	justify-self: start;
+}
+.page{
+	height: 100%;
+}

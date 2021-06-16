@@ -18,26 +18,28 @@
         <img class="logo-img" src="image/nerds-logo.svg" width="159" height="65" alt="Логотип Нёрдс">
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+        <li><a href="blank.html">СТУДИЯ</a></li>
+        <li><a href="blank.html">КЛИЕНТЫ</a></li>
+        <li><a>МАГАЗИН</a></li>
+        <li><a href="blank.html">КОНТАКТЫ</a></li>
       </ul>
-      <a class="basket" href="blank.html">
-        <img src="image/cart-icon.svg" width="15" height="15" alt="Иконка Корзины">
-        <p> Корзина</p>
-      </a>
+      <div class="basket-navigation">
+		<a class="basket" href="blank.html">
+		  <img src="image/cart-icon.svg" width="15" height="15" alt="Иконка Корзины">КОРЗИНА
+		</a>
+		</div>
     </nav>
 	<h1 class="journal">Магазин готовых шаблонов</h1>
   </header>
   <main class="catalog-container">
-    <section>
-      <h2>Фильтр</h2>
+	<div class="center-filter">
+	<section>
+		<h2>Фильтр</h2>
       <!--Здесь будет ползунок-->
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="net">
           <legend>Сетка</legend>
-          <ul class="net">
+          <ul class="net-radio">
             <li>
               <input type="radio" name="grid" value="adapt" checked>Адаптация
             </li>
@@ -49,9 +51,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="features">
           <legend>Особенности</legend>
-          <ul class="features">
+          <ul class="features-checkbox">
             <li>
               <input type="checkbox" name="features" value="slider" checked>Слайдер
             </li>
@@ -72,6 +74,8 @@
         <button class="choose-btn"  type="submit">Показать</button>
       </form>
     </section>
+</div>
+<div class="center-derectory-sites">
     <section>
       <h3 class="sort-label">Сортировать:</h3>
       <ul class="sort">
@@ -177,7 +181,7 @@
       </ul>
 	  </section>
 	  <section class="pagination-list">
-      <ul>
+      <ul class="page-numbers">
         <li>
           <a>1</a>
         </li>
@@ -192,6 +196,7 @@
         </li>
       </ul>
     </section>
+</div>
     <section>
       <img class="map" src="image/Group-14.jpg" width="1440" height="416" alt="Карта">
 	  <div class="contacs">
@@ -203,14 +208,16 @@
 	  </div>
     </section>
   </main>
-  <footer  class="cellar">
-    <ul class="social-networks">
+  <footer class="cellar">
+	<ul class="center-cellar">
       <li class="social-networks-button"><a href="#"> <img src="image/Group-15.svg" width="81" height="81" alt="Иконка Вконтакте"></a></li>
       <li class="social-networks-button"><a href="#"> <img src="image/Group-16.svg" width="81" height="81" alt="Иконка Facebook"></a></li>
-      <li class="social-networks-button"><a href="#"> <img src="image/Group-17.svg" width="81" height="81" alt="Иконка Instagram"></a></li>
+      <li class="social-networks-button"><a href ="#"> <img src="image/Group-17.svg" width="81" height="81" alt="Иконка Instagram"></a></li>
     </ul>
-    <h2>Давайте дружить, это выгодно!</h2>
+	<div class="tagline">
+	<h2 >Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
+	</div>
   </footer>
   <section class="communication">
     <h2>Напишите нам</h2>
