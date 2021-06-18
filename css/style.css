@@ -2,7 +2,7 @@
 	--basic-black: #000000;
 	--basic-white: #ffffff;
 	--basic-extra-white: #EEEEEE;
-	--basic-gray: #666666;
+	--basic-grey: #666666;
 	--basic-lite-grey: #D7DCDE;
 	--basic-red: #FB565A;
 	--basic-extra-red: #E74246;
@@ -14,6 +14,7 @@
 	--basic-strange-white:#DFDFDF;
 	--basic-main-white:#D5D5D5;
 	--basic-main-grey:  #283136;
+	--basic-networks-grey:  #E1E1E1;
 
 
 }
@@ -62,15 +63,8 @@ img{
 	color: var(--basic-black);
 	background-color: var(--basic-extra-white);
 	margin-top: 53px;
-}
-.center-navigation,
-.center-container,
-.catalog-container,
-.cellar
-{
-	width: 1170px;
-	margin: 0 auto;
-	padding: 0 10px;
+	text-transform: uppercase;
+	align-items: center;
 }
 .site-navigation{
 	width: 437px;
@@ -105,6 +99,10 @@ img{
 .page-header{
 	display: grid;
 	grid-template-columns: 1fr max-content;
+	width: 1160px;
+	justify-self: center;
+	margin: 0 auto;
+	padding: 0;
 }
 .box-ability{
 	display: grid;
@@ -128,8 +126,9 @@ img{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	width: 1170px;
+	justify-self: center;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 .achievements{
 	display: grid;
@@ -147,7 +146,7 @@ img{
 	margin: 0;
 	padding: 0;
 }
-.main-aboutus{
+.main-about-us{
 	margin-top: 40px;
 	margin-bottom: 23px;
 }
@@ -170,40 +169,35 @@ img{
 	font-weight: bold;
 	color: var(--basic-black);
 }
-.partners{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	width: 1170px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
 .map{
-	max-width: 1170px;
 	justify-self: center;
+	width: 100%;
+	height: 416px;
 }
-.contacs h3{
+.contacts h3{
 	font-size: 18px;
 	line-height: 30px;
 	color: var(--basic-black);
 }
 .partners{
 	color: inherit;
-	margin: 0;
-	padding: 0 ;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
 	justify-self: center;
 	margin-top: 73px;
 	margin-bottom: 80px;
+	align-items: center;
 }
-.partner:hover, .partner:focus{
+.partners:hover, .partners:focus{
 	color: var(--basic-black);
 }
 .contacs p{
 	font-size: 16px;
 	line-height: 18px;
-	color: var(--basic-gray);
+	color: var(--basic-grey);
 }
 .cellar h2{
 	font-size: 36px;
@@ -245,7 +239,6 @@ img{
 button{
 	font-size: 16px;
 	line-height: 18px;
-	font: inherit;
 	text-align: center;
 	vertical-align: middle;
 	color: var(--basic-white);
@@ -253,7 +246,6 @@ button{
 	background-color: var(--basic-red);
 	border: none;
 	border-radius: 3px;
-
 }
 button:hover,
 button:focus{
@@ -310,42 +302,73 @@ button:active{
 	width: 1170px;
 	margin-top: 68px;
 	margin-bottom: 68px;
+	align-items: center;
+	justify-self: center;
 }
-/* ПРОБЛЕМА С ИКОНКАМИ СОЦСЕТЕЙ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*поставить фон на иконки соц.сетей*/
 .center-cellar{
 	list-style:none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin: 68;
+	margin: 0;
 	padding: 0;
 	justify-self: start;
 	column-gap: 9px;
+	background-color: var(--basic-networks-grey);
 }
-
+.social-networks-vk{
+	color: ivar(--basic-white);
+	width: 26px;
+	height: 15px;
+}
+.social-networks-fb{
+	color:var(--basic-white);
+	width: 12px;
+	height: 22px;
+	margin-left: 10px;
+}
+.social-networks-inst{
+	color: var(--basic-white);
+	width: 21px;
+	height: 21px;
+	margin-left: 10px;
+}
 .tagline{
 	justify-self: center;
 	margin: 0;
 	padding: 0;
 	margin-right: 240px;
 }
-.social-networks-button{
-	color: inherit;
-}
-.social-networks-button:hover,
-.social-networks-button:focus{
+.social-networks-vk:hover,
+.social-networks-fb:hover,
+.social-networks-inst:hover,
+.social-networks-vk:focus,
+.social-networks-fb:focus,
+.social-networks-inst:focus
+{
 	background: linear-gradient(0deg, var(--basic-extra-red), var(--basic-extra-red)), var(--basic-white);
 }
-
-
-										/*КАТАЛОГ*/
-
-
+/*КАТАЛОГ*/
 .catalog-container{
+	display: grid;
+	width: 1160px;
+	justify-self: center;
+}
+.center-catalog-container{
 	display: grid;
 	grid-template-columns: 260px 1fr;
 }
-.center-derectory-sites{
+.center-directory-sites{
 	margin-left: 141px;
+}
+.center-sort{
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	margin-top: 55px ;
+	margin-bottom: 48px;
+}
+.sort a{
+	margin-left: 10px;
 }
 .net,
 .features{
@@ -360,13 +383,16 @@ button:active{
 	padding: 0 0;
 	list-style: none;
 }
+.radio-indentation,
+.checkbox-indentation{
+	margin-right: 11px;
+}
 .price-btn{
 	width: 200px;
 	height: 50px;
 }
 .net{
 	margin-top: 54px;
-
 }
 .net-radio li{
 	margin-top: 15px ;
@@ -390,6 +416,7 @@ legend{
 	font-size: 18px;
 	line-height: 30px;
 	color: var(--basic-black);
+	text-transform: uppercase;
 }
 .catalog-container input{
 	font-size: 16px;
@@ -404,10 +431,15 @@ legend{
 	border-radius: 3px;
 	margin-top: 48px;
 }
-.choose-btn:hover, .choose-btn:focus{
+.choose-btn:hover,
+ .choose-btn:focus,
+ .pagination-btn:hover,
+ .pagination-btn:focus
+ {
 	background: var(--basic-strange-white);
 }
-.choose-btn:active{
+.choose-btn:active,
+.pagination-btn:active{
 	background: var(--basic-main-white);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	color: var(--basic-black);
@@ -421,15 +453,36 @@ legend{
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
+	text-transform: uppercase;
 }
 .sort{
+	display: flex;
+	justify-self: end;
+	align-self: center;
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--basic-black);
 	list-style: none;
 }
-.directory-sites ul{
+.directory-sites{
+	display: flex;
+	flex-wrap: wrap;
+	width: 760px;
+	justify-content: space-between;
 	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+.inf-product{
+	background-color: var(--basic-extra-white);
+	width: 360px;
+	height: 231px;
+	text-align: center;
+	padding-top: 26px;
+}
+.directory-sites li{
+	min-width: 358px;
+	min-height: 578px;
 }
 .name-product{
 	font-weight: bold;
@@ -440,18 +493,31 @@ legend{
 .description-product{
 	font-size: 16px;
 	line-height: 18px;
-	color: var(--basic-gray);
+	color: var(--basic-grey);
 }
 .pagination-list ul{
 	list-style: none;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
-	color: var (--basic-black);
+	color: var(--basic-black);
 }
-.page-nambers{
+.page-numbers{
+	display: flex;
 	grid-column: 1 / -1;
 	justify-self: start;
+	margin-top: 55px;
+	margin-bottom: 60px;
+}
+.page-numbers li{
+	margin-right: 51px;
+	align-self: center;
+}
+.pagination-btn{
+	width: 260px;
+	height: 50px;
+	color: var(--basic-black);
+	background-color: var(--basic-extra-white);
 }
 .page{
 	height: 100%;
