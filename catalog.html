@@ -14,22 +14,24 @@
 <body class="page-body">
   <header class="main-header">
 	  <h1 class="visually-hidden">Нёрдс</h1>
-    <nav class="main-navigation">
-      <a class="logo" href="index.html">
+    <div class="center-navigation">
+	<nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img class="logo-img" src="image/nerds-logo.svg" width="159" height="65" alt="Логотип Нёрдс">
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+        <li class="navigation-link"><a href="blank.html">Студия</a></li>
+        <li class="navigation-link"><a href="blank.html">Клиенты</a></li>
+        <li class="navigation-link"><a class="navigation-border">Магазин</a></li>
+        <li class="navigation-link"><a href="blank.html">Контакты</a></li>
       </ul>
-      <div class="basket-navigation">
-		<a class="basket" href="blank.html">
-		  <img src="image/cart-icon.svg" width="15" height="15" alt="Иконка Корзины">Корзина
-		</a>
-		</div>
+	  <div>
+      <a class="basket-navigation" href="blank.html">
+        <img class="basket" src="image/cart-icon.svg" width="15" height="15" alt="Иконка Корзины"> <p>Корзина</p>
+      </a>
+	  </div>
     </nav>
+	</div>
 	<h1 class="journal">Магазин готовых шаблонов</h1>
   </header>
   <main class="catalog-container">
@@ -184,16 +186,16 @@
 	  <section class="pagination-list">
       <ul class="page-numbers">
         <li>
-          <a>1</a>
+          <a class="number-link-now">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a class="numbers-link" href="#">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a class="numbers-link" href="#">3</a>
         </li>
         <li>
-          <a href="#"><button class="pagination-btn" type="button">Следующая</button></a>
+          <a class="numbers-link-next" href="#">Следующая</a>
         </li>
       </ul>
     </section>
