@@ -84,6 +84,10 @@ img{
 	margin: 0;
 	padding: 0;
 }
+.site-navigation a{
+	display: block;
+	padding: 13px 0;
+}
 .navigation-link:hover a,
 .basket-navigation:hover{
 	color: var(--basic-red);
