@@ -29,8 +29,8 @@
           </a>
         </div>
       </nav>
-      <div class="site-wrapper site-wrapper-1">
-        <div class="page-header">
+      <div class="site-wrapper">
+        <div class="page-header  site-wrapper-1">
           <section class="slider">
             <ul class="slider-list">
               <li class="slider-item slide slide-current">
@@ -39,7 +39,6 @@
                 <p>Математически выверенный дизайн
                   <br> для вашего сайта или мобильного приложения</p>
                 <button class="job-btn slide-button" type="button">Узнать больше</button>
-                <!--<img class="job-img" src="image/nerds-index-slide1-1.png" width="760" height="431" alt="Слайд Нёрдс">-->
               </li>
               <li class="slider-item slide">
                 <h3 class="slide-title">Любим математику<br>
@@ -47,7 +46,6 @@
                 <p>Никакого креатива,только математические формулы
                   <br> для расчета идеальных пропорций</p>
                 <button class="job-btn slide-button" type="button">Узнать больше</button>
-                <!--<img class="job-img" src="image/nerds-index-slide2-1.png" width="760" height="431" alt="Слайд Нёрдс">-->
               </li>
               <li class="slider-item slide">
                 <h3 class="slide-title">Только ночь,<br>
@@ -55,7 +53,6 @@
                 <p>Работать днем, как все? Мы против этого.
                   <br> Ближе к полуночи работа только начинается.</p>
                 <button class="job-btn slide-button" type="button">Узнать больше</button>
-                <!--<img class="job-img" src="image/nerds-index-slide3-1.png" width="760" height="431" alt="Слайд Нёрдс">-->
               </li>
             </ul>
             <div class="slider-controls">
@@ -126,18 +123,24 @@
         </div>
       </section>
       <div class="partners">
-        <a class="partners-link" href="blank.html"> <img src="image//logo_htmlacademy-1.svg" width="199" height="57" alt="Изображение htmlacademy"></a>
+        <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="image//logo-1-1.svg" width="199" height="57" alt="Изображение htmlacademy"></a>
         <a class="partners-link" href="blank.html"> <img src="image/logo-2-1.svg" width="209" height="90" alt="Изображение Барбершоп Бородинский"></a>
         <a class="partners-link" href="blank.html"> <img src="image/logo-3-1.svg" width="185" height="52" alt="Изображение Pink App"></a>
         <a class="partners-link" href="blank.html"> <img src="image/logo-4-1.svg" width="173" height="84" alt="Изображение MISHKA"></a>
       </div>
-      <section> <img class="map" src="image/map.png" width="1440" height="416" alt="Карта">
-        <div class="contacts">
+      <section>
+		  <div class="center-map">
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8010257037706!2d30.312217315771967!3d59.
+		968623981887085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315a4bdf3f1b%3A0x1c8b299cbcd21256!2z0L3QsNCxLiDQ
+		oNC10LrQuCDQmtCw0YDQv9C-0LLQutC4!5e0!3m2!1sru!2sby!4v1624387680548!5m2!1sru!2sby" width="100%" height="416" id="map" allowfullscreen
+		alt="Место нахождение офиса компании по адресу наб. Реки Карповки, 5лит П, Санкт-Петербург"></iframe>
+	</div>
+		<div class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>наб. Реки Карповки,
             <br> 5 лит П, Санкт-Петербург</p>
           <p>+7 800 555-86-28</p>
-          <button class="write-btn" type="button">НАПИШИТЕ НАМ</button>
+         <a href="#popup"> <button class="write-btn"  type="button">НАПИШИТЕ НАМ</button></a>
         </div>
       </section>
     </div>
@@ -159,26 +162,33 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-  <section class="communication">
-    <h2>Напишите нам</h2>
-    <form class="communication-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="login-name">Ваше имя:</label>
-        <br>
-        <input id="login-name" type="text" name="name" placeholder="Имя Фамилия"> </p>
-      <p>
-        <label for="login-email">Ваш email:</label>
-        <br>
-        <input id="login-email" type="email" name="login" placeholder="email@example.com"> </p>
-      <P>
-        <label for="login-text">Текст письма:</label>
-        <br>
-        <textarea id="login-text" name="text" rows="6" cols="50" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="send-btn" type="submit">Отправить</button>
-      <br>
-    </form>
-    <button class="button-close" type="button">Закрыть</button>
+  <section class="communication modal-communication"  id="popup">
+	<div class="communication-center">
+  <h2>Напишите нам</h2>
+  <a class="button-close" href="#map"></a>
+</div>
+  <form class="form-communication" action="https://echo.htmlacademy.ru" method="post">
+	<p>
+	  <label for="login-name">Ваше имя:</label>
+	  <br>
+	  <input id="login-name" type="text" name="name" placeholder="Имя Фамилия">
+	</p>
+
+	<p>
+	  <label for="login-email">Ваш email:</label>
+	  <br>
+	  <input id="login-email" type="email" name="login" placeholder="email@example.com">
+	</p>
+
+	<P>
+	  <label for="login-text">Текст письма:</label>
+	  <br>
+	  <textarea id="login-text" name="text" rows="6" cols="50" placeholder="В свободной форме"></textarea>
+	</P>
+
+	<button class="send-btn" type="submit">Отправить</button>
+	<br>
+  </form>
   </section>
 </body>
 

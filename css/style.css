@@ -15,12 +15,10 @@
 	--basic-main-white: #D5D5D5;
 	--basic-main-grey: #283136;
 	--basic-networks-grey: #E1E1E1;
-
-
 }
 
 .page-body {
-	min-width: 1440px;
+	min-width: 1300px;
 	margin: 0;
 	/* внешний отступ*/
 	padding: 0;
@@ -62,9 +60,9 @@ img {
 }
 
 .main-navigation {
-	display: grid;
-	justify-content: stretch;
-	grid-template-columns: 1fr 2fr max-content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -79,14 +77,11 @@ img {
 }
 
 .site-navigation {
-	width: 437px;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	width: 482px;
 	margin: 0;
 	padding: 0;
-	min-height: 30px;
 }
 
 .navigation-link {
@@ -152,20 +147,17 @@ img {
 	color: var(--basic-black);
 }
 
-.job-img {
-	justify-self: end;
-}
-
 .page-header {
 	width: 1160px;
+	height: 431px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 0px;
+	background-position: top right;
 }
 
 .site-wrapper {
 	min-width: 760px;
 	background-repeat: no-repeat;
-	background-position: top right;
 }
 
 .slider-list {
@@ -175,11 +167,9 @@ img {
 }
 
 .slider-controls {
-	position: absolute;
-	bottom: 96px;
-	left: 536px;
-	z-index: 20;
+	margin-left: 536px;
 	display: flex;
+	flex-wrap: wrap;
 	width: 67px;
 	justify-content: space-between;
 }
@@ -188,8 +178,8 @@ img {
 	padding: 0;
 	width: 17px;
 	height: 17px;
-	background-color: #ffffff;
-	border: 2px solid #ffffff;
+	background-color: var(--basic-white);
+	border: 2px solid var(--basic-white);
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -207,18 +197,18 @@ img {
 }
 
 .site-wrapper-1 {
-	background-color: var(--basic-extra-white);
-	background-image: url("image/nerds-index-slide1-1.png");
+	background-image: url("../image/nerds-index-slide1-1.png");
+	background-repeat: no-repeat;
 }
 
 .site-wrapper-2 {
-	background-color: var(--basic-extra-white);
-	background-image: url("image/nerds-index-slide2-1.png");
+	background-image: url("../image/nerds-index-slide2-1.png");
+	background-repeat: no-repeat;
 }
 
 .site-wrapper-3 {
-	background-color: var(--basic-extra-white);
-	background-image: url("image/nerds-index-slide3-1.png");
+	background-image: url("../image/nerds-index-slide3-1.png");
+	background-repeat: no-repeat;
 }
 
 .box-ability {
@@ -314,11 +304,17 @@ img {
 }
 
 .map {
-	justify-self: center;
-	width: 100%;
-	height: 416px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border: none;
 }
 
+.center-map{
+	display: flex;
+	justify-content: center;
+}
 .contacts h3 {
 	font-size: 18px;
 	line-height: 30px;
@@ -338,27 +334,22 @@ img {
 	align-items: center;
 }
 
-/* НЕ ПОЛУЧИЛОСЬ, НЕ ФОРТАНУЛО, ПАЦАН К УСПЕХУ ШЁЛ!!!!!!!!!!!!
-.partners-link:after{
+/* НЕ ПОЛУЧИЛОСЬ, НЕ ФОРТАНУЛО, ПАЦАН К УСПЕХУ ШЁЛ!!!!!!!!!!!!*/
+.partners-link::after{
 	content: "";
+	display: inline-block;
+	background-image: url(../image/rectangle1.png);
+	margin-left: 55px;
 	width: 2px;
 	height: 52px;
-	background-color: var(--basic-black);
-	display: inline-block;
-	margin-left: 40px;
 }
-.partners::before{
+/*.partners::after{
 	content: "";
 	width: 1160px;
 	height:2px;
-	background-color: var(--basic-black);
+	background-image: url(../image/rectangle2.png);
 	display: inline-block;
-}
-0*/
-.partners-link:hover,
-.partners-link:focus {
-	color: var(--basic-black);
-}
+}*/
 
 .contacs p {
 	font-size: 16px;
@@ -376,6 +367,7 @@ img {
 	font-size: 16px;
 	line-height: 22px;
 }
+
 
 .communication h2 {
 	font-size: 45px;
@@ -485,6 +477,7 @@ button:active {
 .send-btn {
 	width: 259px;
 	height: 50px;
+	margin-top: 25px;
 }
 
 .button-close {
@@ -571,10 +564,54 @@ button:active {
 	background-color: var(--basic-super-red);
 }
 
-.communication-form {
+.communication form {
 	display: flex;
 	flex-wrap: wrap;
 	width: 761px;
+	justify-content: space-between;
+}
+.communication{
+	position: fixed;
+	padding-left: 100px;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: var(--basic-white);
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+.modal-communication{
+	width: 860px;
+	height: 590px;
+	visibility: hidden;
+}
+.modal-communication:target{
+	visibility: visible;
+}
+.button-close{
+	content: "";
+	align-self: center;
+	margin-right: 90px;
+	background-image: url(../image/close.svg);
+	background-color: var(--basic-white);
+	opacity: 0.3;
+	cursor: pointer;
+}
+.button-close:hover{
+	content: "";
+	background-image: url(../image/close.svg);
+	background-color: var(--basic-white);
+	opacity: 1;
+}
+.button-close:active{
+	content: "";
+	background-image: url(../image/close.svg);
+	background-color: var(--basic-white);
+	opacity: 0.1;
+}
+.communication-center{
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -592,6 +629,7 @@ button:active {
 
 .center-directory-sites {
 	margin-left: 141px;
+	margin-top: 0px;
 }
 
 .center-sort {
@@ -621,6 +659,7 @@ button:active {
 	line-height: 24px;
 	text-transform: uppercase;
 	font-weight: 700;
+	margin-top: 75px;
 }
 
 .range-controls {
@@ -737,13 +776,14 @@ button:active {
 .radio-indentation:checked+label::after {
 	content: "";
 	position: absolute;
-	top: 5px;
-	left: -36px;
-	width: 8px;
-	height: 8px;
-	border: #4d4d4d;
+	top: 9px;
+	left: -26px;
+	width: 9px;
+	height: 9px;
+	background-image: url("../image/Oval.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 	opacity: 0.4;
-	border-radius: 50%;
 }
 
 .checkbox-indentation+label::before {
@@ -751,24 +791,25 @@ button:active {
 	position: absolute;
 	left: -34px;
 	top: 0;
-	width: 19px;
-	height: 19px;
-	border: 3px solid #4d4d4d;
-	opacity: 0.4;
-	border-radius: 3px;
+	width: 23px;
+	height: 23px;
+	background-image: url("../image/nottick.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 /*НЕ РАБОТАЕТ АКТИВНЫЙ CHECKBOX!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .checkbox-indentation:checked+label::after {
 	content: "";
 	position: absolute;
-	top: 4px;
-	left: -30px;
-	width: 16px;
-	height: 16px;
-	background-image: url("image/tick.svg");
+	top: 2px;
+	left: -32px;
+	width: 25px;
+	height: 23px;
+	background-image: url("../image/1tick.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.4;
 }
 
 .net {
@@ -849,6 +890,7 @@ legend {
 
 .sort {
 	display: flex;
+	flex-wrap: wrap;
 	justify-self: end;
 	align-self: center;
 	font-size: 16px;
@@ -859,8 +901,8 @@ legend {
 
 .main-sort-link {
 	display: flex;
+	justify-content: space-between;
 	list-style: none;
-	margin-top: 19px;
 }
 
 .sort-link {
@@ -942,6 +984,7 @@ legend {
 
 .page-numbers {
 	display: flex;
+	flex-wrap: wrap;
 	grid-column: 1 / -1;
 	justify-self: start;
 	margin-top: 55px;
