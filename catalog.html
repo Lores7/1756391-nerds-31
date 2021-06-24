@@ -82,7 +82,7 @@
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden radio-indentation" type="radio" name="grid" value="rubber-band" id="filter-rubber-band">
+                  <input class="visually-hidden radio-indentation" type="radio" name="grid" value="rubber-band" id="filter-rubber-band" >
                   <label for="filter-rubber-band">Резиновая</label>
                 </li>
               </ul>
@@ -107,7 +107,7 @@
                   <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden checkbox-indentation" type="checkbox" name="features" value="basket" id="filter-basket">
+                  <input class="visually-hidden checkbox-indentation" type="checkbox" name="features" value="basket" id="filter-basket" >
                   <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
@@ -121,27 +121,28 @@
           <h3 class="sort-label">Сортировать:</h3>
           <ul class="sort">
             <li>
-              <a><b>ПО ЦЕНЕ</b></a>
+              <a  tabindex="0"><b>ПО ЦЕНЕ</b></a>
             </li>
             <li>
-              <a href="#">ПО ТИПУ</a>
+              <a href="#" tabindex="0">ПО ТИПУ</a>
             </li>
             <li>
-              <a href="#">ПО НАЗВАНИЮ</a>
+              <a href="#" tabindex="0">ПО НАЗВАНИЮ</a>
             </li>
           </ul>
           <ul class="main-sort-link">
             <li>
-              <a class="sort-link" href="#"></a>
+              <a class="sort-link" href="#" tabindex="0"></a>
             </li>
             <li>
-              <a class="sort-link2" href="#"></a>
+              <a class="sort-link2" href="#" tabindex="0"></a>
             </li>
           </ul>
         </section>
         <section>
           <ul class="directory-sites">
-            <li>
+            <li class="site1">
+				<img class="browser browser1" src="image/browser.svg" alt="">
               <a href="product1.html">
                 <h3 class="visually-hidden">Сайт "Седона"</h3>
                 <p>
@@ -155,7 +156,8 @@
                 <button class="price-btn" type="button">9900 ₽</button>
               </div>
             </li>
-            <li>
+            <li class="site2">
+				<img class="browser browser2" src="image/browser.svg" alt="">
               <a href="product2.html">
                 <h3 class="visually-hidden">Сайт "Pink"</h3>
                 <p>
@@ -169,7 +171,8 @@
                 <button class="price-btn" type="button">9900 ₽</button>
               </div>
             </li>
-            <li>
+            <li class="site3">
+				<img class="browser browser3" src="image/browser.svg" alt="">
               <a href="product3.html">
                 <h3 class="visually-hidden">Сайт "Барбершоп"</h3>
                 <p>
@@ -183,7 +186,8 @@
                 <button class="price-btn" type="button">9900 ₽</button>
               </div>
             </li>
-            <li>
+            <li class="site4">
+				<img class="browser browser4" src="image/browser.svg" alt="">
               <a href="product4.html">
                 <h3 class="visually-hidden">Сайт "Мишка"</h3>
                 <p>
@@ -197,7 +201,8 @@
                 <button class="price-btn" type="button">9900 ₽</button>
               </div>
             </li>
-            <li>
+            <li class="site5">
+				<img class="browser browser5" src="image/browser.svg" alt="">
               <a href="product5.html">
                 <h3 class="visually-hidden">Сайт "Aplus"</h3>
                 <p>
@@ -212,7 +217,8 @@
                 <button class="price-btn" type="button">9900 ₽</button>
               </div>
             </li>
-            <li>
+            <li class="site6">
+				<img class="browser browser6" src="image/browser.svg" alt="">
               <a href="product.html">
                 <h3 class="visually-hidden">Сайт "Kvast"</h3>
                 <p>
@@ -265,14 +271,14 @@
   </section>
   <footer class="cellar">
     <ul class="center-cellar">
-      <li class="social-networks-vk">
-        <a href="#"> <img src="image/vk-icon.svg" width="81" height="81" alt="Иконка Вконтакте"></a>
+      <li>
+        <a class="social-networks social-networks-vk" href="#"> <img src="image/vk-icon.svg" width="81" height="81" alt="Иконка Вконтакте"></a>
       </li>
-      <li class="social-networks-fb">
-        <a href="#"> <img src="image/Shape.svg" width="81" height="81" alt="Иконка Facebook"></a>
+      <li>
+        <a class="social-networks social-networks-fb" href="#"> <img src="image/Shape.svg" width="81" height="81" alt="Иконка Facebook"></a>
       </li>
-      <li class="social-networks-inst">
-        <a href="#"> <img src="image/insta-icon.svg" width="81" height="81" alt="Иконка Instagram"></a>
+      <li>
+        <a class="social-networks social-networks-inst" href="#"> <img src="image/insta-icon.svg" width="81" height="81" alt="Иконка Instagram"></a>
       </li>
     </ul>
     <div class="tagline">
@@ -299,7 +305,7 @@
       <P>
         <label for="login-text">Текст письма:</label>
         <br>
-        <textarea id="login-text" name="text" rows="6" cols="50" placeholder="В свободной форме"></textarea>
+        <textarea id="login-text" name="text" rows="6" cols="89" placeholder="В свободной форме"></textarea>
       </P>
       <button class="send-btn" type="submit">Отправить</button>
       <br>
