@@ -693,7 +693,7 @@ button:active {
 	line-height: 24px;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-top: 75px;
+	padding-top: 75px;
 }
 
 .range-controls {
@@ -915,7 +915,7 @@ legend {
 	line-height: 20px;
 }
 
-.center .sort-label {
+.sort-label {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
@@ -980,14 +980,76 @@ legend {
 	list-style: none;
 	margin: 0 auto;
 	padding: 0;
+	position: relative;
 }
 
 .inf-product {
+	display: none;
 	background-color: var(--basic-extra-white);
 	width: 360px;
 	height: 231px;
 	text-align: center;
 	padding-top: 26px;
+	position: absolute;
+	margin-top: -280px;
+}
+
+.browser{
+	margin-bottom: -23px;
+}
+.site1{
+	position: relative;
+}
+.site1:hover .inf-product{
+	display: block;
+}
+.site1:hover .browser1{
+	opacity: 0.12;
+}
+.site2{
+	position: relative;
+}
+.site2:hover .inf-product{
+	display: block;
+}
+.site2:hover .browser2{
+	opacity: 0.12;
+}
+.site3{
+	position: relative;
+}
+.site3:hover .inf-product{
+	display: block;
+}
+.site3:hover .browser3{
+	opacity: 0.12;
+}
+.site4{
+	position: relative;
+}
+.site4:hover .inf-product{
+	display: block;
+}
+.site4:hover .browser4{
+	opacity: 0.12;
+}
+.site5{
+	position: relative;
+}
+.site5:hover .inf-product{
+	display: block;
+}
+.site5:hover .browser5{
+	opacity: 0.12;
+}
+.site6{
+	position: relative;
+}
+.site6:hover .inf-product{
+	display: block;
+}
+.site6:hover .browser6{
+	opacity: 0.12;
 }
 
 .directory-sites li {
