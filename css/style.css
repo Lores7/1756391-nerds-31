@@ -221,10 +221,21 @@ img {
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 76px;
-	margin-bottom: 121px;
+	margin-bottom: 131px;
 	column-gap: 100px;
 }
 
+.box-ability::after{
+	content: "";
+	display: inline-block;
+	background-image: url("../image/rectangle2.png");
+	width: 1158px;
+	height: 2px;
+	position: absolute;
+	margin-top: 430px;
+	margin-left: -32px;
+
+}
 .box-ability h2 {
 	font-size: 24px;
 	line-height: 30px;
@@ -238,6 +249,7 @@ img {
 	justify-self: center;
 	padding: 0;
 	margin: 0 auto;
+	padding-bottom: 25px;
 }
 
 .achievements {
@@ -308,11 +320,30 @@ img {
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 416;
+	height: 416px;
 	margin: 0 auto;
 	border: none;
 }
 
+.partners::before{
+	content: "";
+	display: inline-block;
+	background-image: url("../image/rectangle2.png");
+	width: 1158px;
+	height: 2px;
+	position: absolute;
+	margin-bottom: 130px;
+}
+
+.partners::after{
+	content: "";
+	display: inline-block;
+	background-image: url("../image/rectangle2.png");
+	width: 1158px;
+	height: 2px;
+	position: absolute;
+	margin-top: 130px;
+}
 .center-map {
 	display: flex;
 	justify-content: center;
@@ -354,10 +385,16 @@ img {
 	margin-top: 73px;
 	margin-bottom: 80px;
 	align-items: center;
+	padding-bottom: 15px;
 }
 
-/* НЕ ПОЛУЧИЛОСЬ, НЕ ФОРТАНУЛО, ПАЦАН К УСПЕХУ ШЁЛ!!!!!!!!!!!!*/
-.partners-link::after {
+.partners-link{
+	opacity: 0.2;
+}
+.partners-link:hover{
+	opacity: 1;
+}
+.border-link1::after {
 	content: "";
 	display: inline-block;
 	background-image: url(../image/rectangle1.png);
@@ -366,13 +403,24 @@ img {
 	height: 52px;
 }
 
-/*.partners::after{
+.border-link2::after {
 	content: "";
-	width: 1160px;
-	height:2px;
-	background-image: url(../image/rectangle2.png);
 	display: inline-block;
-}*/
+	background-image: url(../image/rectangle1.png);
+	margin-left: 55px;
+	width: 2px;
+	height: 52px;
+	margin-bottom: 18px;
+}
+
+.border-link3::after {
+	content: "";
+	display: inline-block;
+	background-image: url(../image/rectangle1.png);
+	margin-left: 55px;
+	width: 2px;
+	height: 52px;
+}
 
 .contacs p {
 	font-size: 16px;
@@ -390,7 +438,6 @@ img {
 	font-size: 16px;
 	line-height: 22px;
 }
-
 
 .communication h2 {
 	font-size: 45px;
@@ -501,6 +548,9 @@ button:active {
 	color: var(--basic-white);
 }
 
+.write-btn:hover{
+	background-color: var(--basic-extra-red);
+}
 .send-btn {
 	width: 259px;
 	height: 50px;
@@ -530,18 +580,22 @@ button:active {
 	margin: 0;
 	padding: 0;
 	justify-self: start;
-	column-gap: 9px;
+	column-gap: 12px;
 }
 
+.social-networks{
+	padding: 40px;
+	border-radius: 50%;
+}
 .social-networks-vk {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 40px;
 	height: 40px;
-	padding: 30px 30px;
+	padding: 21px 21px 21px 21px;
 	background-color: var(--basic-networks-grey);
-	color: inherit;
+	color: var(--basic-white);
 	border-radius: 50%;
 }
 
@@ -551,7 +605,7 @@ button:active {
 	justify-content: center;
 	width: 20px;
 	height: 20px;
-	padding: 40px 40px;
+	padding: 31px 31px 31px 31px;
 	background-color: var(--basic-networks-grey);
 	color: inherit;
 	border-radius: 50%;
@@ -563,7 +617,7 @@ button:active {
 	justify-content: center;
 	width: 30px;
 	height: 30px;
-	padding: 35px 35px;
+	padding: 26px 26px 26px 26px;
 	background-color: var(--basic-networks-grey);
 	color: inherit;
 	border-radius: 50%;
@@ -797,7 +851,7 @@ button:active {
 .radio-indentation+label::before {
 	content: "";
 	position: absolute;
-	left: -34px;
+	left: -35px;
 	top: 0;
 	width: 19px;
 	height: 19px;
