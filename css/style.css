@@ -225,7 +225,7 @@ img {
 	column-gap: 100px;
 }
 
-.box-ability::after{
+.box-ability::after {
 	content: "";
 	display: inline-block;
 	background-image: url("../image/rectangle2.png");
@@ -236,6 +236,7 @@ img {
 	margin-left: -32px;
 
 }
+
 .box-ability h2 {
 	font-size: 24px;
 	line-height: 30px;
@@ -325,7 +326,7 @@ img {
 	border: none;
 }
 
-.partners::before{
+.partners::before {
 	content: "";
 	display: inline-block;
 	background-image: url("../image/rectangle2.png");
@@ -335,7 +336,7 @@ img {
 	margin-bottom: 130px;
 }
 
-.partners::after{
+.partners::after {
 	content: "";
 	display: inline-block;
 	background-image: url("../image/rectangle2.png");
@@ -344,6 +345,7 @@ img {
 	position: absolute;
 	margin-top: 130px;
 }
+
 .center-map {
 	display: flex;
 	justify-content: center;
@@ -388,12 +390,14 @@ img {
 	padding-bottom: 15px;
 }
 
-.partners-link{
+.partners-link {
 	opacity: 0.2;
 }
-.partners-link:hover{
+
+.partners-link:hover {
 	opacity: 1;
 }
+
 .border-link1::after {
 	content: "";
 	display: inline-block;
@@ -548,9 +552,10 @@ button:active {
 	color: var(--basic-white);
 }
 
-.write-btn:hover{
+.write-btn:hover {
 	background-color: var(--basic-extra-red);
 }
+
 .send-btn {
 	width: 259px;
 	height: 50px;
@@ -583,10 +588,11 @@ button:active {
 	column-gap: 12px;
 }
 
-.social-networks{
+.social-networks {
 	padding: 40px;
 	border-radius: 50%;
 }
+
 .social-networks-vk {
 	display: flex;
 	align-items: center;
@@ -1048,61 +1054,79 @@ legend {
 	margin-top: -280px;
 }
 
-.browser{
+.browser {
 	margin-bottom: -23px;
 }
-.site1{
+
+.site1 {
 	position: relative;
 }
-.site1:hover .inf-product{
+
+.site1:hover .inf-product {
 	display: block;
 }
-.site1:hover .browser1{
+
+.site1:hover .browser1 {
 	opacity: 0.12;
 }
-.site2{
+
+.site2 {
 	position: relative;
 }
-.site2:hover .inf-product{
+
+.site2:hover .inf-product {
 	display: block;
 }
-.site2:hover .browser2{
+
+.site2:hover .browser2 {
 	opacity: 0.12;
 }
-.site3{
+
+.site3 {
 	position: relative;
 }
-.site3:hover .inf-product{
+
+.site3:hover .inf-product {
 	display: block;
 }
-.site3:hover .browser3{
+
+.site3:hover .browser3 {
 	opacity: 0.12;
 }
-.site4{
+
+.site4 {
 	position: relative;
 }
-.site4:hover .inf-product{
+
+.site4:hover .inf-product {
 	display: block;
 }
-.site4:hover .browser4{
+
+.site4:hover .browser4 {
 	opacity: 0.12;
 }
-.site5{
+
+.site5 {
 	position: relative;
 }
-.site5:hover .inf-product{
+
+.site5:hover .inf-product {
 	display: block;
 }
-.site5:hover .browser5{
+
+.site5:hover .browser5 {
 	opacity: 0.12;
 }
-.site6{
+
+.site6 {
 	position: relative;
 }
-.site6:hover .inf-product{
+
+.site6:hover .inf-product {
 	display: block;
 }
-.site6:hover .browser6{
+
+.site6:hover .browser6 {
 	opacity: 0.12;
 }
 
